@@ -88,12 +88,19 @@
 
 button {
   outline: none;
-  border: none;
-  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: transparent;
   border-radius: 3px;
   padding: 6px;
-  color: rgb(50, 50, 50);
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+button:hover {
+  box-shadow: 0px 0px 5px whitesmoke;
+}
+
+button:active {
+  transform: scale(0.92);
 }
 
 .card-image {

@@ -3,8 +3,8 @@ import Issue from "./issue";
 
 class Input extends Component {
   state = {
-    userName: "",
-    repoName: "",
+    userName: "jenish-jain",
+    repoName: "ledger",
     issues: []
   };
 
@@ -40,7 +40,7 @@ class Input extends Component {
             className="text-input"
             type="text"
             name="userName"
-            placeholder="Github Name"
+            placeholder="jenish-jain"
             onChange={event => this.handleChange(event)}
           />
           <span>Your Github Repository Name </span>
@@ -48,7 +48,7 @@ class Input extends Component {
             className="text-input"
             type="text"
             name="repoName"
-            placeholder="Github Repo Name"
+            placeholder="ledger"
             onChange={event => this.handleChange(event)}
           />
           <button onClick={this.getIssues}>Fetch Issues</button>
